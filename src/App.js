@@ -24,7 +24,7 @@ const validate = (values) => {
   if (!values.comment) errors.comment = "required";
   if (!values.feedback) errors.feedback = "required";
 
-  console.log(errors);
+  return errors;
 };
 
 const onSubmit = (values) => {

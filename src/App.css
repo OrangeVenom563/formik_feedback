@@ -11,16 +11,15 @@ span{
   color:red;
 }
 
-input[type=text] {
+input[type=text], input[type=email] {
   border: none;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(194, 192, 192);
   width:50%;
 }
 
-input[type=email] {
-  border: none;
-  border-bottom: 1px solid grey;
-  width:50%;
+input:focus{
+  outline: none;
+  border-bottom: 2px solid grey;
 }
 
 .form-box{
