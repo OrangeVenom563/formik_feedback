@@ -9,8 +9,9 @@ const FormInputEmail = ({name,lable,formik})=>{
         name={name}
         id={name}
         onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
         value={formik.values[name]}
-      /> {formik.errors[name]? <span >{formik.errors[name]}</span>:null}
+    />  {formik.touched[name]&&formik.errors[name]? <span >{formik.errors[name]}</span>:null}
       </div>
     )
 }
